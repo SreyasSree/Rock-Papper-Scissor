@@ -48,3 +48,13 @@ h2{
     color: white;
 
 }
+a{
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 2px yellow;
+    font-size: large;
+    padding-top: 40px;
+}
