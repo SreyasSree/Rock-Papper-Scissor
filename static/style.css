@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+button{
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px blue;
+}
+i{
+    font-size: 100px;
+}
+div{
+    display:flex;
+    gap: 80px;
+    justify-content: center;
+
+}
+button:hover{
+    background-color: black;
+    border: 2px solid red;
+    color: red;
+}
+
+
+
+
+
+h2{
+    color: blue;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px red;
+}
