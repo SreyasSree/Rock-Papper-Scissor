@@ -1,10 +1,10 @@
 from random import randint
 from flask import Flask , render_template
 
-app = Flask('Rock Papper Scissor')
+app = Flask('Stone Papper Scissor')
 
 def computer_move():
-    options = ['Rock','Papper','Scissor']
+    options = ['Stone','Papper','Scissor']
     move = options[randint(0,2)]
     return move
 
@@ -12,11 +12,11 @@ def computer_move():
 def winner(computer_move, player_move):
     if computer_move == player_move:
         winner = 'tie'
-    elif player_move == 'Rock' and computer_move == 'Papper':
+    elif player_move == 'Stone' and computer_move == 'Papper':
         winner = 'computer'
     elif player_move == 'Papper' and computer_move == 'Scissor':
         winner = 'computer'
-    elif player_move == 'Scissor' and computer_move == 'Rock':
+    elif player_move == 'Scissor' and computer_move == 'Stone':
         winner = 'computer'
     else:
         winner = 'player'
