@@ -6,11 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roc Papper Scissor</title>
 
+    <script src="https://kit.fontawesome.com/ddd466807d.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+   <section class="white">
+    {% if computer == player_move %}
+    <h1>Game is tie</h1>
+    {% else %}
     <h1>The winner is {{sreyas}}</h1>
-    <h2>computer move was {{computer}} </h2><br>
-    <h2>the player move was {{player_move}}</h2>
+    {% endif %}
+    
+    
+    {% if computer == 'Rock' %}
+    <h2>Computer move was <i class="fa-regular fa-hand-back-fist"></i></h2><br>
+    {% elif computer == 'Papper' %}
+    <h2>Computer move was <i class="fa-regular fa-hand"></i></h2><br>
+    {% elif computer == 'Scissor' %}
+    <h2>Computer move was <i class="fa-regular fa-hand-scissors"></i></h2><br>
+    {% endif %}
+
+    {% if player_move == 'Rock' %}
+    <h2>The player move was <i class="fa-regular fa-hand-back-fist"></i></h2><br>
+    {% elif player_move == 'Papper' %}
+    <h2>The player move was <i class="fa-regular fa-hand"></i></h2><br>
+    {% elif player_move == 'Scissor' %}
+    <h2>The player move was <i class="fa-regular fa-hand-scissors"></i></h2><br>
+    {% endif %}
+
+   </section>
 </body>
 </html>

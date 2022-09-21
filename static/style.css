@@ -18,7 +18,7 @@ h1{
     margin-top: 50px;
     text-shadow: 2px 2px blue;
 }
-i{
+.red i{
     font-size: 100px;
 }
 div{
@@ -42,4 +42,9 @@ h2{
     text-align: center;
     margin-top: 50px;
     text-shadow: 2px 2px red;
+}
+.white i{
+    font-size: 70px;
+    color: white;
+
 }
